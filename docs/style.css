@@ -364,3 +364,47 @@ nav a{
 }
 
 
+
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.social a {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333333;
+    border: 1px solid #444;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social img,
+.social svg {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.social img {
+    filter: brightness(0) invert(1);
+}
+
+.social a:hover {
+    background: #ffc800;
+    transform: translateY(-5px);
+    border-color: #ffc800;
+}
+
+.social a:hover img,
+.social a:hover svg {
+    filter: brightness(0);
+}
